@@ -1,9 +1,11 @@
 import React from 'react'
+import Produtos from '../components/Produtos'
 
 const Home = () => {
   return (
     <div>
-        <h1>home</h1>
+      <h1>Bem Vindo a petz</h1>
+      <Produtos/>
     </div>
   )
 }

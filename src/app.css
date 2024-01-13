@@ -1,5 +1,8 @@
 *{
-
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,12 +14,11 @@ main{
 }
 
 header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #333;
-    color: #fff;
+    height: 85px;
 }
 
 footer{
@@ -29,10 +31,11 @@ footer{
 }
 
 h1{
-
+    color: black;
 }
 
 nav{
+    padding: 10px;
 }
 
 nav ul{
