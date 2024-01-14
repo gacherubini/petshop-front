@@ -1,4 +1,8 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Toaster} from "react-hot-toast"
+
+import React from 'react'
+
 
 import Header from './Header';
 import Footer from './Footer';
@@ -19,6 +23,7 @@ function App() {
         <Header/>
     </header>
     <main> 
+    <Toaster position="top-right" toastOptions={{duration:20000}}/>
     <Routes>
                 <Route path="/" element = {<Home/>} />
                 <Route path="/carrinho" element = {<Carrinho/>} />
