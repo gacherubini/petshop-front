@@ -8,6 +8,9 @@ import Login from './components/Login';
 
 import './app.css'
 
+import Register from './components/Register';
+import DashBoard from './components/Dashboard';
+
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
                 <Route path="/" element = {<Home/>} />
                 <Route path="/carrinho" element = {<Carrinho/>} />
                 <Route path="/login" element = {<Login/>} />
+                <Route path="/register" element = {<Register/>} />
+                <Route path="/dashboard" element = {<DashBoard/>} />
     </Routes>
     </main>
     <footer> 

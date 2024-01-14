@@ -17,7 +17,10 @@ const Header = () => {
                 <Link to="/carrinho"><FaCartShopping size={40}/></Link>
             </li>
             <li>
-                <Link to="/login"><IoPersonOutline size={40}/></Link>
+                <Link to="/login"><IoPersonOutline size={40}/>login</Link>
+            </li>
+            <li>
+                <Link to="/register"><IoPersonOutline size={50}/> registre</Link>
             </li>
         </ul> 
     </nav>

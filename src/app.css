@@ -48,5 +48,36 @@ nav ul li{
 
 }
 
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    gap: 5px;
+
+  }
+  
+  label{
+    color: black;
+  }
+
+  button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 35px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+
+  }
+
+  button:hover {
+    background-color: #084303; /* Green */
+    color: white;
+    cursor: pointer;
+  }
+
 
 
