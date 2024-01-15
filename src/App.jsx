@@ -14,6 +14,7 @@ import './app.css'
 
 import Register from './components/Register';
 import DashBoard from './components/Dashboard';
+import DashboardAdmin from './components/DashboardAdmin';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/login" element = {<Login/>} />
                 <Route path="/register" element = {<Register/>} />
                 <Route path="/dashboard" element = {<DashBoard/>} />
+                <Route path="/adm" element = {<DashboardAdmin/>} />
     </Routes>
     </main>
     <footer> 

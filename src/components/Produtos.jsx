@@ -24,16 +24,15 @@ const Produtos = () => {
 
   return (
     <div>
-    <div>
       {produtos.map((produto) => (
         <div key={produto.id}>
           <h3>{produto.name}</h3>
           <p>{produto.description}</p>
           <p>Price: ${produto.price}</p>
+          <img src={produto.image} />
         </div>
       ))}
     </div>
-  </div>
   )
 }
 
