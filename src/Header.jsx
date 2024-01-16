@@ -14,13 +14,16 @@ const Header = () => {
                 <Link to="/"><img src="src/imgs/petz.png" width={100}/></Link>
             </li>
             <li>
-                <Link to="/carrinho"><FaCartShopping size={40}/></Link>
+                <Link to="/carrinho"><FaCartShopping size={50}/></Link>
             </li>
             <li>
-                <Link to="/login"><IoPersonOutline size={40}/>login</Link>
+                <Link to="/login"><IoPersonOutline size={50}/>login</Link>
             </li>
             <li>
                 <Link to="/register"><IoPersonOutline size={50}/> registre</Link>
+            </li>
+            <li>
+                <Link to="/dashboard"><IoPersonOutline size={50}/> Conta</Link>
             </li>
         </ul> 
     </nav>

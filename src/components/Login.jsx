@@ -22,10 +22,11 @@ const Login = () => {
                 toast.error(data.error)
             } else{
                 setData({});
+                toast.success('Login Successful');
                 navigate('/dashboard')
             }
         } catch (error) {
-            
+            console.log(error);
         }
     };
 
