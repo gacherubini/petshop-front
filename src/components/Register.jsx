@@ -11,6 +11,7 @@ function Register() {
         password: '',
     });
 
+
     const registerUser = async (e) => {
         e.preventDefault();
         const { name, email, password } = data;

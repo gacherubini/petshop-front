@@ -14,13 +14,16 @@ const Login = () => {
         e.preventDefault();
         const {email, password} = data;
         try {
+
             const{data} = await axios.post('http://localhost:3000/userauth/login',{
                 email, 
                 password
             })
+            
             if(data.error){
                 toast.error(data.error)
             } else{
+                localStorage.setItem("user", data);
                 setData({});
                 toast.success('Login Successful');
                 navigate('/dashboard')
