@@ -20,15 +20,13 @@ const Login = () => {
                 password
             })
             
-            if(data.error){
-                toast.error(data.error)
-            } else{
-                localStorage.setItem("user", data);
-                setData({});
-                toast.success('Login Successful');
-                navigate('/dashboard')
-            }
+            toast.success('Login Successful');
+
+            navigate('/dashboard')
+            
+            console.log('Login Successful:', data);
         } catch (error) {
+            toast.error(data.error)
             console.log(error);
         }
     };

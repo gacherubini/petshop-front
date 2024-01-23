@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { UserContextProvider } from "../context/userContext";
 import {Toaster} from "react-hot-toast"
 
 import React from 'react'
@@ -19,6 +20,7 @@ import DashboardAdmin from './components/DashboardAdmin';
 
 function App() {
   return (
+    <UserContextProvider>
     <BrowserRouter>
     <header>
         <Header/>
@@ -38,6 +40,7 @@ function App() {
       <Footer/> 
     </footer>
   </BrowserRouter>
+  </UserContextProvider>
   )
 }
 
