@@ -10,6 +10,7 @@
             if (!user) {
                 axios.get('http://localhost:3000/userauth/profile')
                 .then((data) => {
+                    console.log(data)
                     setUser(data); 
                 })
             }
